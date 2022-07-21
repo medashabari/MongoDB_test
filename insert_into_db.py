@@ -1,5 +1,6 @@
 import pymongo
-client = pymongo.MongoClient("mongodb+srv://system:system@cluster0.0rtf2.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://system:<password>@cluster0.0rtf2.mongodb.net/?retryWrites=true&w=majority")
+#<password> use your password
 db = client.test
 d = {
     "name":"Shabarish",
