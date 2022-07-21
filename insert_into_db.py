@@ -7,6 +7,6 @@ d = {
     "email" : "shabari@gmail.com",
     "surname" : "meda"
 }
-db1 = client['mongotest']
-coll = db1['test']
+db1 = client['mongotest']  # database name if exists uses it else create new one
+coll = db1['test']  # like table name if exists uses it else create new one
 coll.insert_one(d)
