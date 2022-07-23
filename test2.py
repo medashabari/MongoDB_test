@@ -82,11 +82,12 @@ collection = database['table']  # accessing the collection inside database
 # d = collection.find({'$or':[{'item':'sketch pad'},{'qty':{"$gte":75}}]})  # or condtion --> selecting the data where item = sketch pad or qty >= 75
 d = collection.find({'status':{'$gt':'C'},'$or':[{'item':'sketch pad'},{'qty':{"$gte":75}}]}) # selecting the data where (status >) C and (item ='sketch pad' or qty >= 75)
 
-
 # update
 # collection.update_one({'item':'canvas'},{'$set':{'item':'Shabu'}}) $ updating the item canvas to shabu
 # collection.update_one({'item': 'canvas'} , {'$set':{'item': 'sudhanshu'} })
 # d= collection.find({'item':'Shabu'})
+
+# delete
 # collection.delete_one({'item': 'Shabu'}) # deleting the item shabu
 # d = collection.find({'item':'Shabu'})
 for i in d:
