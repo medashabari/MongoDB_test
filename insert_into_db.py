@@ -1,3 +1,4 @@
+#sample creation
 import pymongo
 client = pymongo.MongoClient("mongodb+srv://system:<password>@cluster0.0rtf2.mongodb.net/?retryWrites=true&w=majority")
 #<password> use your password
